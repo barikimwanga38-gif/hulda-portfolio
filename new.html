@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Bariki Creative Landing Page</title>
+
+<style>
+
+/* RESET */
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+}
+
+body{
+  font-family: Arial, sans-serif;
+  line-height:1.6;
+}
+
+/* HEADER / NAVBAR */
+.header{
+  background:#333;
+  color:white;
+  position:sticky;
+  top:0;
+  z-index:1000;
+}
+
+.nav{
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  max-width:1200px;
+  margin:auto;
+  padding:20px;
+}
+
+.logo{
+  font-size:24px;
+  font-weight:bold;
+}
+
+.nav-links{
+  list-style:none;
+  display:flex;
+  gap:20px;
+}
+
+.nav-links a{
+  color:white;
+  text-decoration:none;
+  transition:0.3s;
+}
+
+.nav-links a:hover{
+  color:#4CAF50;
+}
+
+/* HERO SECTION */
+.hero{
+  background:linear-gradient(135deg,#667eea,#764ba2);
+  color:white;
+  text-align:center;
+  padding:100px 20px;
+}
+
+.hero h1{
+  font-size:48px;
+  margin-bottom:20px;
+}
+
+.hero p{
+  font-size:20px;
+  margin-bottom:30px;
+}
+
+.btn{
+  display:inline-block;
+  padding:15px 30px;
+  background:white;
+  color:#667eea;
+  text-decoration:none;
+  border-radius:5px;
+  font-weight:bold;
+  transition:0.3s;
+}
+
+.btn:hover{
+  transform:translateY(-3px);
+  box-shadow:0 10px 20px rgba(0,0,0,0.2);
+}
+
+/* FEATURES */
+.features{
+  max-width:1200px;
+  margin:80px auto;
+  padding:0 20px;
+}
+
+.features h2{
+  text-align:center;
+  font-size:36px;
+  margin-bottom:50px;
+}
+
+.feature-grid{
+  display:flex;
+  flex-wrap:wrap;
+  gap:30px;
+}
+
+.feature-card{
+  flex:1 1 300px;
+  background:white;
+  padding:30px;
+  border-radius:10px;
+  box-shadow:0 4px 6px rgba(0,0,0,0.1);
+  transition:0.3s;
+}
+
+.feature-card:hover{
+  transform:translateY(-5px);
+  box-shadow:0 10px 20px rgba(0,0,0,0.15);
+}
+
+.feature-card h3{
+  color:#667eea;
+  margin-bottom:15px;
+}
+
+/* ABOUT */
+.about{
+  background:#f4f4f4;
+  padding:80px 20px;
+  text-align:center;
+}
+
+.about h2{
+  font-size:32px;
+  margin-bottom:20px;
+}
+
+.about p{
+  max-width:700px;
+  margin:auto;
+  font-size:18px;
+}
+
+/* CONTACT */
+.contact{
+  padding:80px 20px;
+  text-align:center;
+}
+
+.contact h2{
+  font-size:32px;
+  margin-bottom:20px;
+}
+
+input, textarea{
+  width:100%;
+  max-width:500px;
+  padding:12px;
+  margin:10px auto;
+  display:block;
+  border:1px solid #ccc;
+  border-radius:5px;
+}
+
+input:focus, textarea:focus{
+  border-color:#667eea;
+  outline:none;
+}
+
+button{
+  padding:12px 25px;
+  border:none;
+  background:#667eea;
+  color:white;
+  border-radius:5px;
+  cursor:pointer;
+  transition:0.3s;
+}
+
+button:hover{
+  background:#4CAF50;
+}
+
+/* FOOTER */
+.footer{
+  background:#333;
+  color:white;
+  text-align:center;
+  padding:30px 20px;
+}
+
+/* RESPONSIVE */
+@media(max-width:768px){
+
+  .nav-links{
+    flex-direction:column;
+    gap:10px;
+  }
+
+  .hero h1{
+    font-size:32px;
+  }
+
+}
+
+</style>
+</head>
+
+<body>
+
+<!-- HEADER -->
+<header class="header">
+  <nav class="nav">
+    <div class="logo">Bariki Creative</div>
+    <ul class="nav-links">
+      <li><a href="#">Home</a></li>
+      <li><a href="#">Features</a></li>
+      <li><a href="#">About</a></li>
+      <li><a href="#">Contact</a></li>
+    </ul>
+  </nav>
+</header>
+
+<!-- HERO -->
+<section class="hero">
+  <h1>Welcome to Bariki Creative</h1>
+  <p>Graphic Design • Social Media Management • Content Creation</p>
+  <a href="#" class="btn">Get Started</a>
+</section>
+
+<!-- FEATURES -->
+<section class="features">
+  <h2>Our Services</h2>
+  <div class="feature-grid">
+
+    <div class="feature-card">
+      <h3>Graphic Design</h3>
+      <p>Professional logos, branding, posters, and marketing materials for your business.</p>
+    </div>
+
+    <div class="feature-card">
+      <h3>Social Media Management</h3>
+      <p>Grow your audience with strategic content, planning, and engagement.</p>
+    </div>
+
+    <div class="feature-card">
+      <h3>Content Creation</h3>
+      <p>Creative visuals, promotional posts, and digital campaigns that attract attention.</p>
+    </div>
+
+  </div>
+</section>
+
+<!-- ABOUT -->
+<section class="about">
+  <h2>About Bariki Creative</h2>
+  <p>
+    Bariki Creative is a modern creative studio focused on transforming ideas into powerful visual experiences.
+    We help brands stand out through innovative design, strategic social media management, and impactful content creation.
+  </p>
+</section>
+
+<!-- CONTACT -->
+<section class="contact">
+  <h2>Contact Us</h2>
+  <input type="text" placeholder="Your Name">
+  <input type="email" placeholder="Your Email">
+  <textarea rows="5" placeholder="Your Message"></textarea>
+  <button>Send Message</button>
+</section>
+
+<!-- FOOTER -->
+<footer class="footer">
+  <p>&copy; 2026 Bariki Creative. All rights reserved.</p>
+</footer>
+
+</body>
+</html>
